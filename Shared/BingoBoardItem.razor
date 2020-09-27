@@ -1,0 +1,10 @@
+<div id="item" class="@(IsActive ? "active": "")" @onclick="@(e => this.IsActive = !this.IsActive)">
+    @Text
+    <span id="checkbox"></span>
+</div>
+
+@code {
+    [Parameter]
+    public string Text {get;set;}
+    private bool IsActive = false;
+}

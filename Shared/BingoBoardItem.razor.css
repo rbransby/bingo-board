@@ -1,0 +1,51 @@
+#item {    
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 1.35;
+    user-select: none;
+    padding:17px;
+    height:110px;
+    width:110px;
+    color:#d7ba7d; 
+    border: 2px solid #d7ba7d; 
+}
+
+#item:after {
+    content: "-";
+    position: absolute;
+    top: -32%;
+    left: -40%;			
+    width: 100%;
+    opacity: 0;
+    transition: 0.1s ease;
+    height: 0;
+    pointer-events: none;
+    font: 280px/0.5 "Caveat Brush", cursive;
+    text-align: center;
+    transform: rotate(-45deg);
+    color:#6e11aa;
+}
+
+#item.active:after {
+    height: 100%;
+    opacity: 0.7;
+}
+
+#item.active #checkbox {
+    content: "\2714";
+    position: absolute;    
+    left: 0;
+    top: -19px;
+    color: purple;
+    font: 30px "Caveat Brush", cursive;
+}
+
+#item #checkbox {
+    display:none;
+}
