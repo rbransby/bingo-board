@@ -1,0 +1,14 @@
+﻿@page "/"
+@inject HttpClient Http
+@using Model = bingo_board_model;
+
+
+  <BingoBoard Board=BingoBoard></BingoBoard>
+
+@code {
+  public Model.BingoBoard BingoBoard;
+  protected override async Task OnInitializedAsync()
+  {      
+      BingoBoard = await Http.GetFromJsonAsync<Model.BingoBoard>("https://localhost:6001/BingoBoard/fff");
+  }
+}

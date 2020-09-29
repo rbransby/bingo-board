@@ -10,8 +10,8 @@
     line-height: 1.35;
     user-select: none;
     padding:17px;
-    height:110px;
-    width:110px;
+    height:150px;
+    width:150px;
     color:#d7ba7d; 
     border: 2px solid #d7ba7d; 
 }
@@ -26,7 +26,7 @@
     transition: 0.1s ease;
     height: 0;
     pointer-events: none;
-    font: 280px/0.5 "Caveat Brush", cursive;
+    font: 380px/0.5 "Caveat Brush", cursive;
     text-align: center;
     transform: rotate(-45deg);
     color:#6e11aa;
