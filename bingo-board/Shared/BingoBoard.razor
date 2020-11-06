@@ -1,16 +1,17 @@
 @using Model = bingo_board_model;
-
-<div id="title">M3 Sprint Showcase Bingo!</div>
-<div id="container">
-    @if (Board != null)
+@if (Board != null)
     {
-        @foreach (var item in Board.BingoBoardItems)
-        {
-            <BingoBoardItem Text="@item.Text"></BingoBoardItem>
-        }
+      
+        <div id="title">@Board.Title</div>
+        <div id="container">
+            @foreach (var item in Board.BingoBoardItems)
+                {
+                    <BingoBoardItem Text="@item.Text"></BingoBoardItem>
+                }
+            
+            
+        </div>
     }
-    
-</div>
 
 @code {
     [Parameter]

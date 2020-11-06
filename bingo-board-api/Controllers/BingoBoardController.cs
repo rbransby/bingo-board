@@ -37,7 +37,7 @@ namespace bingo_board_api.Controllers
             {
                 bingoBoard.BingoBoardItems = bingoBoard.BingoBoardItems.Append(DefaultItems[random.Next(5)]);
             }         
-
+            bingoBoard.Title = "M3 Sprint Showcase Bingo!";
             return bingoBoard;   
         }
 
